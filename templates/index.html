@@ -11,18 +11,67 @@
 
   <style>
     :root {
-      --black: #0a0a0a;
-      --white: #f4f1ec;
-      --grey-light: #e8e5df;
-      --grey-mid: #b0ab9f;
-      --grey-dark: #3a3730;
-      --accent: #1a1a18;
+      --black: #1c1a17;
+      --white: #eae5da;
+      --grey-light: #ded6c5;
+      --grey-mid: #a39985;
+      --grey-dark: #5c5446;
+      --accent: #8c2d19;
     }
 
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     html { font-size: 16px; }
+<section style="padding: 6rem 3rem; border-top: 1px solid var(--black); font-family: 'Space Mono', monospace; background-color: var(--white); position: relative; z-index: 10;">
 
+  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; margin-bottom: 6rem;">
+    <div>
+      <h2 style="font-family: 'Bebas Neue', sans-serif; font-size: clamp(2.5rem, 5vw, 4rem); text-transform: uppercase; line-height: 1; color: var(--black);">Sexto Semestre</h2>
+      <p style="font-size: .6rem; letter-spacing: .2em; text-transform: uppercase; color: var(--grey-mid); margin-top: 0.5rem;">[ Desarrollo & Arquitectura ]</p>
+    </div>
+
+    <div style="font-size: 0.9rem; line-height: 1.7; color: var(--black);">
+      <p style="margin-bottom: 1.5rem;">Los estudiantes de sexto semestre diseñaron y desplegaron un ecosistema completo de automatización, estructurando el proyecto en tres pilares esenciales de software:</p>
+      <ul style="list-style: none; padding: 0; margin-bottom: 2rem;">
+        <li style="margin-bottom: 0.5rem;"><span style="color: var(--accent);">—</span> <strong>Backend:</strong> Servidor robusto para el control de rutas y peticiones HTTP.</li>
+        <li style="margin-bottom: 0.5rem;"><span style="color: var(--accent);">—</span> <strong>Base de Datos:</strong> Modelado en SQL para la persistencia y seguridad de los datos.</li>
+        <li style="margin-bottom: 0.5rem;"><span style="color: var(--accent);">—</span> <strong>Despliegue:</strong> Configuración en la nube bajo entornos de producción en Linux/Ubuntu.</li>
+      </ul>
+
+      <div style="font-family: 'DM Serif Display', serif; font-style: italic; font-size: clamp(1.2rem, 1.8vw, 1.6rem); line-height: 1.4; border-left: 2px solid var(--accent); padding-left: 1.5rem; margin-top: 2rem;">
+        "La integración de bases de datos, lógica de servidor y despliegue en la nube consolidó un entendimiento real sobre el software en producción, demostrando la importancia de la arquitectura backend."
+      </div>
+    </div>
+  </div>
+
+  <hr style="border: 0; border-top: 1px solid var(--grey-light); margin-bottom: 6rem;">
+
+  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem;">
+    <div>
+      <h2 style="font-family: 'Bebas Neue', sans-serif; font-size: clamp(2.5rem, 5vw, 4rem); text-transform: uppercase; line-height: 1; color: var(--black);">Cuarto Semestre</h2>
+      <p style="font-size: .6rem; letter-spacing: .2em; text-transform: uppercase; color: var(--grey-mid); margin-top: 0.5rem;">[ Fundamentos & Tecnologías ]</p>
+    </div>
+
+    <div style="font-size: 0.9rem; line-height: 1.7; color: var(--black);">
+      <p style="margin-bottom: 1.5rem;">Durante el semestre, se desarrollaron competencias clave enfocadas en la construcción y maquetación de plataformas web funcionales:</p>
+      <ul style="list-style: none; padding: 0; margin-bottom: 2rem;">
+        <li style="margin-bottom: 0.5rem;"><span style="color: var(--accent);">—</span> Maquetación avanzada, estructura semántica y diseño responsivo.</li>
+        <li style="margin-bottom: 0.5rem;"><span style="color: var(--accent);">—</span> Lógica de programación elemental y control de flujos de datos.</li>
+        <li style="margin-bottom: 0.5rem;"><span style="color: var(--accent);">—</span> Trabajo colaborativo mediante sistemas de control de versiones.</li>
+      </ul>
+
+      <div style="border: 1px solid var(--black); padding: 2rem; margin: 2.5rem 0; background-color: rgba(222, 214, 197, 0.2);">
+        <h3 style="font-family: 'Space Mono', monospace; font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 0.75rem; color: var(--accent);">[ Implementación con IA ]</h3>
+        <p style="font-size: 0.85rem;">Se ejerció el uso de la Inteligencia Artificial como un asistente de desarrollo (Pair Programming) enfocado en la optimización de código, depuración ágil de errores en consola y la comprensión profunda de buenas prácticas de documentación.</p>
+      </div>
+
+      <div style="font-family: 'DM Serif Display', serif; font-style: italic; font-size: clamp(1.2rem, 1.8vw, 1.6rem); line-height: 1.4; border-left: 2px solid var(--accent); padding-left: 1.5rem; margin-top: 2rem;">
+        "La Inteligencia Artificial actuó como un multiplicador de habilidades. Nos enseñó que la tecnología potencia el aprendizaje cuando se combina con un pensamiento crítico y bases sólidas de código."
+      </div>
+    </div>
+  </div>
+
+</section>
     body {
       background-color: var(--white);
       color: var(--black);
@@ -175,18 +224,26 @@
       opacity: .7;
       transition: opacity .8s ease;
     }
-    .hero-img-area:hover img { opacity: .85; }
-    .hero-overlay-text {
-      position: relative; z-index: 2;
-      font-family: 'Bebas Neue', sans-serif;
-      font-size: clamp(1.5rem, 3vw, 2.5rem);
-      color: var(--white);
-      background: var(--black);
-      display: inline-block;
-      padding: .3em .6em;
-      letter-spacing: .08em;
-    }
-
+    .hero-img-area img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  filter: none; /* Quitamos el filtro gris para que se vea a todo color */
+  opacity: 1;   /* Le damos el 100% de intensidad al color */
+  transition: transform .5s ease;
+}
+.hero-img-area:hover img {
+  transform: scale(1.03); /* Un zoom sutil y pro cuando pasas el mouse */
+}
+.hero-overlay-text {
+  position: relative; z-index: 2;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(1.5rem, 3vw, 2.5rem);
+  color: var(--white);
+  background: var(--black);
+  display: inline-block;
+  padding: .3em .6em;
+  letter-spacing: .08em;
+}
     /* ── MARQUEE ── */
     .marquee-wrap {
       border-top: 1px solid var(--black);
